@@ -4,8 +4,125 @@
   <meta charset="UTF-8">
   <title>My Personal Site</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome - for skill icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Navigation Header -->
+  <header>
+    <nav>
+      <h1>Joshua Gonzales</h1>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#bio">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section - Welcome area with main message -->
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Welcome to <span class="highlight">My Portfolio</span></h2>
+      <p>Web Development Student | Creative Problem Solver</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- Bio Section - Tell visitors about yourself -->
+  <section id="bio">
+    <h2>About Me</h2>
+    <div class="bio-content">
+      <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-gray-placeholder-vector-illustration_514344-14757.jpg?semt=ais_hybrid&w=740&q=80" alt="Your profile photo">
+      <div class="bio-text">
+        <p>Hi! I'm a web development student learning to create amazing websites. I'm passionate about technology and design.</p>
+        <p>In this portfolio, you'll find the projects I've created during my college course. Each project represents a new skill I've learned and challenges I've overcome.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section - List your technical skills -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <!-- HTML icon -->
+        <i class="fab fa-html5"></i>
+        <h3>HTML</h3>
+        <p>Building web page structure and content</p>
+      </div>
+      <div class="skill-card">
+        <!-- CSS icon -->
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS</h3>
+        <p>Styling and designing beautiful layouts</p>
+      </div>
+      <div class="skill-card">
+        <!-- JavaScript icon -->
+        <i class="fab fa-js"></i>
+        <h3>JavaScript</h3>
+        <p>Adding interactivity to websites</p>
+      </div>
+      <div class="skill-card">
+        <!-- Problem Solving icon -->
+        <i class="fas fa-lightbulb"></i>
+        <h3>Problem Solving</h3>
+        <p>Finding creative solutions to challenges</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section - Showcase your portfolio work -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Project Title 1</h3>
+        <p>Brief description of what this project does and what technologies you used.</p>
+        <a href="#" class="btn-small">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Project Title 2</h3>
+        <p>Brief description of what this project does and what technologies you used.</p>
+        <a href="#" class="btn-small">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Project Title 3</h3>
+        <p>Brief description of what this project does and what technologies you used.</p>
+        <a href="#" class="btn-small">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer - Contact information -->
+  <footer>
+    <p>&copy; 2024 Joshua Gonzales. All rights reserved.</p>
+    <p>Contact: j.gonz@example.com</p>
+  </footer>
+
+  <!-- Script to hide/show navigation on scroll -->
+  <script>
+    // Get the header element
+    const header = document.querySelector('header');
+    let lastScrollPosition = 0;
+
+    // Listen for scroll events
+    window.addEventListener('scroll', function() {
+      // Get current scroll position
+      const currentScrollPosition = window.scrollY;
+
+      // If scrolling down, hide the header
+      if (currentScrollPosition > lastScrollPosition) {
+        header.style.transform = 'translateY(-100%)';
+      } else {
+        // If scrolling up, show the header
+        header.style.transform = 'translateY(0)';
+      }
+
+      // Update last scroll position
+      lastScrollPosition = currentScrollPosition;
+    });
+  </script>
 </body>
 </html>

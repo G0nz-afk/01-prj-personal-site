@@ -1,1 +1,245 @@
-/* Add you CSS here */
+/* Reset default browser styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body - Base styles for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header - Navigation bar at the top */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /* Smooth animation when hiding/showing */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Navigation container */
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation title */
+nav h1 {
+  font-size: 24px;
+}
+
+/* Navigation menu list */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+/* Navigation links */
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #3498db;
+}
+
+/* Hero Section - Large welcome area */
+#hero {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* Highlight effect for text in hero section */
+.highlight {
+  background-color: #2c3e50;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  background-color: white;
+  color: #3498db;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #ecf0f1;
+}
+
+/* Bio Section - About you */
+#bio {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+#bio h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.bio-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.bio-content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bio-text p {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #ecf0f1;
+  padding: 80px 20px;
+}
+
+#skills h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Individual skill card */
+.skill-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Icon styling for skill cards */
+.skill-card i {
+  font-size: 60px;
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.skill-card h3 {
+  color: #3498db;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+/* Projects Section */
+#projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.projects-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Individual project card */
+.project-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 350px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  padding: 20px 20px 10px;
+  color: #2c3e50;
+}
+
+.project-card p {
+  padding: 0 20px 20px;
+  color: #666;
+}
+
+/* Small button for project cards */
+.btn-small {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 20px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-small:hover {
+  background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 80px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
